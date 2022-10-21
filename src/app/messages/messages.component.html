@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="message" *ngIf="messageService.messages.length">
+        <button type="button" class="btn btn-secondary btn-sm" (click)="messageService.clear()">
+          Clear
+        </button>
+        <p>======</p>
+        <div *ngFor="let message of messageService.messages">{{ message }}</div>
+      </div>
+    </div>
+  </div>
+</div>

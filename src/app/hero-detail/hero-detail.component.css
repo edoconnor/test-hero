@@ -1,0 +1,30 @@
+.detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+button {
+  width: 50px;
+}
+input {
+  width: 100px;
+  margin-bottom: 1rem;
+  align-self: center;
+}
+label {
+  color: #d35400;
+}
+.container {
+  background-color: #e67e22;
+  border-radius: 15px;
+  width: 200px;
+  padding-top: 0.5rem;
+}
+.underline {
+  text-decoration: underline;
+  margin-bottom: -0.05rem;
+  margin-top: -1rem;
+}
+input#hero-name {
+  padding-left: .75rem;
+}

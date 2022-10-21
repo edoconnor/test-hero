@@ -1,0 +1,30 @@
+<div *ngIf="hero">
+  <div class="container mx-auto">
+    <div class="row">
+      <div class="col text-center">
+        <h2>{{ hero.name | uppercase }}</h2>
+        <p>🛡️</p>
+        <p class="underline">Details:</p>
+        <div><span>ID: # </span>{{ hero.id }}</div>
+        <div class="detail">
+          <label for="hero-name">Edit Name: </label>
+          <input id="hero-name" [(ngModel)]="hero.name" placeholder="name" />
+          <button
+            type="button"
+            class="btn btn-secondary btn-sm mx-auto mb-3"
+            (click)="save()"
+          >
+            Save
+          </button>
+          <button
+            type="button"
+            class="btn btn-secondary btn-sm mx-auto mb-3"
+            (click)="goBack()"
+          >
+            Back
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
